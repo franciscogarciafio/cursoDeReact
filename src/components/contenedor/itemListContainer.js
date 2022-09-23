@@ -1,10 +1,11 @@
 import React from "react";
+import Title from "../Title/Title";
 
-export const cartWidget = () => {
+export const itemListContainer = () => {
     return (
-        <i className="bi bi-cart-check"></i>
+        <title greeting = "francisco"/>
     );
   };
   
-  export default cartWidget;
+  export default itemListContainer;
 

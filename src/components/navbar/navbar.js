@@ -53,7 +53,7 @@ const Navbar = () => {
               <MenuItem>
                <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
                 <div>
-                <cartWidget />
+                <cartWidget/>
                 </div>
       
             </MenuItemLink>
