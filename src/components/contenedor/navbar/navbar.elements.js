@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -29,11 +30,7 @@ p {
     color: rgb(240, 129, 56);
   }
 }
-`;
-
-export const cartWidjet = styled.ul`
-color: white
-`;
+`
 
 
 
@@ -67,10 +64,11 @@ export const MenuItem = styled.li`
     width: 100%;
     height: 70px;
     display: flex;
-    justify-content: ce;
+    justify-content: center;
     align-items: center;
   }
 `;
+
 
 export const MenuItemLink = styled.a`
   display: flex;
@@ -125,7 +123,7 @@ export const MenuItemLink = styled.a`
   @media screen and (max-width: 500px) {
     div {
       width: 60%;
-      justify-content: left;
+      justify-content: center;
 
       svg {
         display: flex;
@@ -136,7 +134,7 @@ export const MenuItemLink = styled.a`
   @media screen and (max-width: 260px) {
     div {
       width: 100%;
-      justify-content: left;
+      justify-content: center;
 
       svg {
         display: flex;

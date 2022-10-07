@@ -1,0 +1,8 @@
+.counter {
+    width: fit-content;
+    background-color: rgb(240, 179, 12);
+    margin: auto;
+    padding: 3rem;
+    text-align: center;
+    color: beige;
+  }

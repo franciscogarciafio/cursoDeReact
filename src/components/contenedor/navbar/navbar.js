@@ -1,5 +1,7 @@
-import React, { useState } from "react";
-import cartWidget from "../cartwidjet/cartWidjet";
+import React, { useState } from "react"
+import {Link} from 'react-router-dom';
+import People from "../../rutes/Propiedades";
+
 import {
   Container,
   LogoContainer,
@@ -14,6 +16,9 @@ import {
   FaTimes,
 } from "react-icons/fa";
 
+import CartWidget from "../cartWidget/cartWidget";
+
+
 import { IconContext } from "react-icons";
 
 const Navbar = () => {
@@ -23,7 +28,7 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <IconContext.Provider value={{ style: { fontSize: "2em" } }}>
-          <LogoContainer>         
+          <LogoContainer>    
             <p> F.G. SERVICIOS INMOBILIARIOS</p>                      
           </LogoContainer>
           <MobileIcon onClick={() => setShowMobileMenu(!showMobileMenu)}>
@@ -32,12 +37,16 @@ const Navbar = () => {
           <Menu open={showMobileMenu}>
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
-               INICIO
+                <Link className="linkBoton" to={'/'}> INICIO 
+                </Link>                        
              </MenuItemLink>
             </MenuItem>
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                  <Link className="botonNavBar" to={'/people'}>
                   VENTAS
+                  </Link>
+                 
               </MenuItemLink>
             </MenuItem>
             <MenuItem>
@@ -52,12 +61,9 @@ const Navbar = () => {
               </MenuItem>
               <MenuItem>
                <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                <div>
-                <cartWidget/>
-                </div>
-      
-            </MenuItemLink>
-            </MenuItem>
+                    <CartWidget />
+              </MenuItemLink>
+              </MenuItem>
           </Menu>
         </IconContext.Provider>
       </Wrapper>
