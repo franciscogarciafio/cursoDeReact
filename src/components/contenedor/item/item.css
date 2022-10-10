@@ -1,0 +1,9 @@
+.Propiedad {
+    display: block;
+    width: 300px;
+}
+.Propiedad img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

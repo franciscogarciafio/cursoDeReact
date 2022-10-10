@@ -1,6 +1,7 @@
 import React, { useState } from "react"
-import {Link} from 'react-router-dom';
-import People from "../../rutes/Propiedades";
+import { Link } from "react-router-dom";
+
+
 
 import {
   Container,
@@ -37,13 +38,13 @@ const Navbar = () => {
           <Menu open={showMobileMenu}>
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                <Link className="linkBoton" to={'/'}> INICIO 
+                <Link to="/"> INICIO 
                 </Link>                        
              </MenuItemLink>
             </MenuItem>
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                  <Link className="botonNavBar" to={'/people'}>
+                  <Link to= "/categoria/venta">
                   VENTAS
                   </Link>
                  
@@ -51,7 +52,9 @@ const Navbar = () => {
             </MenuItem>
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>                  
-                  ALQUILERES
+              <Link to="/categoria/alquiler">
+                alquileres
+                </Link>
               </MenuItemLink>
             </MenuItem>
             <MenuItem>
@@ -61,7 +64,9 @@ const Navbar = () => {
               </MenuItem>
               <MenuItem>
                <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                <Link to={'/cart'}>
                     <CartWidget />
+                    </Link>
               </MenuItemLink>
               </MenuItem>
           </Menu>
