@@ -1,12 +1,9 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-
-
 
 export const Container = styled.div`
   width: 100%;
   height: 70px;
-  background-color: #23394d; 
+  background-color: rgb(218, 184, 139);
 `;
 
 export const Wrapper = styled.div`

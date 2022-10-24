@@ -21,6 +21,7 @@ import CartWidget from "../cartWidget/cartWidget";
 
 
 import { IconContext } from "react-icons";
+import ContactForm from "../../contactform/contactform";
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -47,19 +48,20 @@ const Navbar = () => {
                   <Link to= "/categoria/venta">
                   VENTAS
                   </Link>
-                 
               </MenuItemLink>
             </MenuItem>
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>                  
               <Link to="/categoria/alquiler">
-                alquileres
+                ALQUILERES
                 </Link>
               </MenuItemLink>
             </MenuItem>
             <MenuItem>
               <MenuItemLink onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                  CONTACTANOS
+              <Link to={'/contactanos'}>
+              CONTACTANOS
+              </Link> 
               </MenuItemLink>
               </MenuItem>
               <MenuItem>

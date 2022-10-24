@@ -6,13 +6,11 @@
 
 body {
   overflow-x: hidden;
-  color: rgb(223, 133, 74);
+  color: rgb(189, 87, 20);
   font-size: 30px;
+  background-color: rgb(223, 211, 194);
+  
 }
-.linkBoton{
-  list-style-type: none;
- display: inline-block;
- font-size: 0.8rem;
- margin: 0.4rem;
- text-decoration: none;
- };
+
+
+
