@@ -1,8 +1,8 @@
 .counter {
     width: fit-content;
-    background-color: rgb(240, 179, 12);
+    background-color: rgb(207, 167, 58);
     margin: auto;
     padding: 3rem;
     text-align: center;
-    color: beige;
+    color: rgb(0, 0, 0);
   }

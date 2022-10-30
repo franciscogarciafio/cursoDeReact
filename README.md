@@ -1,3 +1,19 @@
+# Este proyecto es un trabajo final de react en coder hause
+
+Representa un e-commerce de una inmobiliaria con propiedades en venta y alquiler.
+Se realizo una barra de navegación, un listado de propiedades en venta y alquiler las 
+cuales aparecen todas en la home.
+Las propiedades se dividen en alquileres y venta, contienen detalle de cada propiedad 
+pudiendo sumar al carrito de compras.
+en el caso de alquileres podemos sumar al carrito cantidad de mese a alquilar, se utilizo 
+para poder hacer la suma de un stock.
+También tenemos un formulario para terminar 
+la compra de un producto.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,36 +1,13 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState,} from "react";
 
 const CartContext = React.createContext([]);
 
 export const useCartContext = () => useContext(CartContext);
 
+
+
 const CartProvider = ({ children }) => {
 	const [cart, setCart] = useState([]);
-
-	// const addProduct = (item, newQuantity) => {
-	//     const newCart = cart.filter(prod => prod.id !== item.id);
-	//     newCart.push({ ...item, quantity: newQuantity });
-	//     setCart(newCart);
-	// }
-
-	// const addProduct = (item, newQuantity) => {
-	//     const { quantity = 0 } = cart.find(prod => prod.id === item.id) || {};
-	//     const newCart = cart.filter(prod => prod.id !== item.id);
-	//     setCart([...newCart, { ...item, quantity: quantity + newQuantity }])
-	// }
-
-	// const addProduct = (item, quantity) => {
-	//     let newCart;
-	//     let product = cart.find(product => product.id === item.id);
-	//     if (product) {
-	//         product.quantity += quantity;
-	//         newCart = [...cart];
-	//     } else {
-	//         product = { ...item, quantity: quantity };
-	//         newCart = [...cart, product];
-	//     }
-	//     setCart(newCart);
-	// }
 
 	const addProduct = (item, quantity) => {
 		if (isInCart(item.id)) {
@@ -74,6 +51,7 @@ const CartProvider = ({ children }) => {
 				totalPrice,
 				totalProducts,
 				cart,
+				setCart,
 			}}
 		>
 			{children}

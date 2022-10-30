@@ -21,10 +21,14 @@ export const ItemDetail = ({data}) => {
 		
         <div className="container">
 		<div className="detail">
+			
 			<img className="detail__image" src={data.img} alt="" />
 			<div className="content">
-				<h1>{data.nombre}</h1>
-				
+			<h1>{data.nombre}</h1>
+			<p>Precio: ${data.precio}</p> 
+ 			<p>Ubicacion: {data.ubicación}</p>
+ 			<p>categoria: {data.category}</p>
+			 <p> {data.valor}</p>
 				{
 				goToCart 
 				? <Link to="/cart"> Terminar al carrito</Link>
@@ -32,7 +36,7 @@ export const ItemDetail = ({data}) => {
 				 
 				}
 			</div>
-			<h1>cantidad de dias</h1>
+			
 		</div>
 	</div>
     )

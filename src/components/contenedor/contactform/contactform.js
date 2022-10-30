@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { getFirestore, collection, addDoc } from 'firebase/firestore';
 
-const defaultForm = { name: '', email: '', message: '' };
+
+const defaultForm = { name: '', email: '', telefono: '' };
+
 
 const ContactForm = () => {
   const [form, setForm] = useState(defaultForm);
@@ -29,8 +31,8 @@ const ContactForm = () => {
     <div>
       {id ? (
         <div>
-            Gracias por enviar el mensaje, se ha guardado con id {id}
-          <button onClick={resetHandler}>Enviar otro mensaje</button>
+            Gracias por relizar su compra, se ha guardado con id {id}
+          <button onClick={resetHandler}>Realizar otra compra</button>
         </div>
       ) : (
         <form onSubmit={submitHandler}>
@@ -54,11 +56,11 @@ const ContactForm = () => {
             />
           </div>
           <div>
-            <label htmlFor="message">Mensaje</label>
+            <label htmlFor="telefono">Telefono</label>
             <textarea
-              name="message"
-              id="message"
-              value={form.message}
+              name="telefono"
+              id="telefono"
+              value={form.telefono}
               onChange={changeHandler}
             ></textarea>
           </div>

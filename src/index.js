@@ -1,6 +1,5 @@
 import React,{ StrictMode }  from 'react';
 import { createRoot } from 'react-dom/client';
-import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 // Import the functions you need from the SDKs you need
@@ -24,7 +23,6 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
