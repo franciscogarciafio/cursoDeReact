@@ -1,8 +1,5 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom";
-
-
-
 import {
   Container,
   LogoContainer,
@@ -16,12 +13,8 @@ import {
   FaBars,
   FaTimes,
 } from "react-icons/fa";
-
 import CartWidget from "../cartWidget/cartWidget";
-
-
 import { IconContext } from "react-icons";
-import ContactForm from "../contactform/contactform";
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
