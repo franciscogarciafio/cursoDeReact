@@ -4,7 +4,7 @@ import { CartContext } from '../../Context/CartContext'
 
 export const CheckoutDetail = ({buyer, setValid, handleOrder}) => {
 
-    const {cart, totalPrice} = useContext(CartContext)  // yo lo tengo como items.
+    const {cart, totalPrice} = useContext(CartContext) 
 
     return (
         <div>
